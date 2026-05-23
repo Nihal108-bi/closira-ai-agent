@@ -27,6 +27,8 @@ from pathlib import Path
 # Bootstrap path so `src` imports work regardless of working directory
 # ---------------------------------------------------------------------------
 sys.path.insert(0, str(Path(__file__).parent))
+from dotenv import load_dotenv
+load_dotenv()
 
 from src.agent import ClosiraAgent
 from src.models.schemas import ConversationState

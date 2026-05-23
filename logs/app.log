@@ -1,0 +1,11 @@
+{"ts": "2026-05-23T08:09:10.506349Z", "level": "INFO", "logger": "src.utils.llm_client", "msg": "OpenAIClient initialised (model=gpt-4o-mini)"}
+{"ts": "2026-05-23T08:09:10.507746Z", "level": "INFO", "logger": "src.agent", "msg": "ClosiraAgent initialised"}
+{"ts": "2026-05-23T08:09:30.676486Z", "level": "INFO", "logger": "src.agent", "msg": "session=4a53cd73 stage=faq processing message"}
+{"ts": "2026-05-23T08:09:37.615686Z", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-23T08:09:37.647921Z", "level": "INFO", "logger": "src.stages.faq", "msg": "session=4a53cd73 FAQ handler processing message"}
+{"ts": "2026-05-23T08:09:39.788176Z", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-23T08:09:39.799972Z", "level": "INFO", "logger": "src.agent", "msg": "session=4a53cd73 → QUALIFICATION"}
+{"ts": "2026-05-23T08:10:04.805232Z", "level": "INFO", "logger": "src.agent", "msg": "session=4a53cd73 stage=qualification processing message"}
+{"ts": "2026-05-23T08:10:07.603658Z", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-23T08:10:07.607733Z", "level": "INFO", "logger": "src.stages.qualifier", "msg": "session=4a53cd73 Qualification handler | step=1/3"}
+{"ts": "2026-05-23T08:10:11.642158Z", "level": "INFO", "logger": "httpx", "msg": "HTTP Request: POST https://api.openai.com/v1/chat/completions \"HTTP/1.1 200 OK\""}
