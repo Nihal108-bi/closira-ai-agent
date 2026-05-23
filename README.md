@@ -23,6 +23,8 @@ The agent answers SOP-grounded customer questions, qualifies high-intent leads, 
 - Generates a final `ConversationSummary` with intent, lead details, SOP gaps, escalation context, and recommended next action.
 - Supports Anthropic Claude and OpenAI GPT through the same `BaseLLMClient` interface.
 
+## Demo Video:  https://youtu.be/UQ5nUjeCL8A
+
 ## Architecture
 
 ```mermaid
