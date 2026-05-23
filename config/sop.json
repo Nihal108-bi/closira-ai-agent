@@ -1,0 +1,95 @@
+{
+  "business": {
+    "name": "Bloom Aesthetics Clinic",
+    "type": "Aesthetic medical clinic",
+    "location": "London, UK",
+    "persona_name": "Bloom"
+  },
+  "hours": {
+    "open_days": "Monday to Saturday",
+    "open_hours": "9:00 AM to 7:00 PM",
+    "closed_days": "Sunday and UK Bank Holidays",
+    "note": "Last appointments are scheduled at 6:15 PM"
+  },
+  "services": [
+    {
+      "id": "botox",
+      "name": "Botox (Anti-Wrinkle Injections)",
+      "price_from": 200,
+      "price_currency": "GBP",
+      "description": "Botox injections relax the muscles that cause wrinkles, resulting in a smoother, more refreshed appearance.",
+      "treatment_areas": ["forehead lines", "frown lines (11s)", "crow's feet", "bunny lines", "brow lift"],
+      "duration_of_treatment": "15–30 minutes",
+      "results_onset": "3–7 days to see initial results, full results at 2 weeks",
+      "results_duration": "3–4 months on average",
+      "aftercare": "Avoid lying down for 4 hours post-treatment and avoid strenuous exercise for 24 hours."
+    },
+    {
+      "id": "fillers",
+      "name": "Dermal Fillers",
+      "price_from": 250,
+      "price_currency": "GBP",
+      "description": "Dermal fillers restore lost volume, smooth lines, and contour features using hyaluronic acid gel.",
+      "treatment_areas": ["lips", "cheeks", "nasolabial folds (smile lines)", "jawline", "chin", "under-eyes (tear troughs)"],
+      "duration_of_treatment": "30–45 minutes",
+      "results_onset": "Immediate, with full results after any swelling subsides (5–7 days)",
+      "results_duration": "6–18 months depending on the area treated",
+      "aftercare": "Avoid touching the area for 6 hours, avoid extreme temperatures and alcohol for 24 hours."
+    },
+    {
+      "id": "consultation",
+      "name": "Initial Consultation",
+      "price_from": 0,
+      "price_currency": "GBP",
+      "description": "A free 30-minute one-on-one session with our aesthetic practitioner. Includes a full facial assessment and personalised treatment recommendation.",
+      "required_for": "All new patients must have a consultation before undergoing any treatment.",
+      "note": "Consultations can be booked via WhatsApp or our website."
+    }
+  ],
+  "booking": {
+    "available_channels": ["WhatsApp", "Website"],
+    "cancellation_policy": "24-hour advance notice is required for all cancellations. Late cancellations may incur a rebooking fee.",
+    "rescheduling": "Please get in touch at least 24 hours before your appointment to reschedule.",
+    "deposit": "No deposit is required for consultations. Deposits for treatments will be discussed at the time of booking.",
+    "new_patient_note": "All new patients must complete a health questionnaire before their first appointment."
+  },
+  "faqs": [
+    {
+      "question": "Are consultations free?",
+      "answer": "Yes, your initial consultation is completely free of charge and lasts approximately 30 minutes."
+    },
+    {
+      "question": "How long does Botox last?",
+      "answer": "Botox results typically last 3–4 months. Results may vary depending on the individual and area treated."
+    },
+    {
+      "question": "How long do fillers last?",
+      "answer": "Dermal fillers generally last 6–18 months, depending on the treatment area and product used."
+    },
+    {
+      "question": "Is there a cancellation fee?",
+      "answer": "We require at least 24 hours' notice for cancellations. Late cancellations may incur a rebooking fee."
+    },
+    {
+      "question": "How do I book?",
+      "answer": "You can book via WhatsApp or through our website. Consultations are free and a great first step for new patients."
+    },
+    {
+      "question": "What are your opening hours?",
+      "answer": "We're open Monday to Saturday, 9:00 AM to 7:00 PM. We're closed on Sundays and UK Bank Holidays."
+    }
+  ],
+  "escalation_triggers": {
+    "complaint": "Any expression of dissatisfaction about a previous treatment or experience",
+    "medical_question": "Questions about allergies, contraindications, medications, health conditions, or medical suitability",
+    "pricing_negotiation": "Requests for discounts, price matching, or negotiating the listed prices",
+    "unanswered_questions": "More than 2 consecutive questions that cannot be answered from this SOP",
+    "angry_sentiment": "Expressions of frustration, anger, or threatening language",
+    "explicit_escalation": "Customer directly asks to speak to a human, manager, or real person",
+    "safety_concern": "Any mention of adverse reactions, allergic responses, or post-treatment complications"
+  },
+  "escalation_contact": {
+    "message_to_customer": "I'm connecting you with one of our clinic coordinators who will be able to help you directly. Please bear with us — a team member will be in touch shortly.",
+    "internal_flag": "ESCALATE_TO_HUMAN"
+  }
+}
